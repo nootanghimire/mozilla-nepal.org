@@ -7,7 +7,7 @@
 }
 #topic ul li{
       display: inline-block;
-      width:220px;
+      width:20%;
       height: 120px;
       line-height: 60px;
       vertical-align: middle;
@@ -39,7 +39,7 @@
       left:-5px;
       top:-65px;
       display: inline-block;
-      width:inherit;
+      width:100%;
       height: inherit;
       padding: 5px;
       font-size: 12px;
