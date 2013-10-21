@@ -113,7 +113,7 @@ p{font-family:Metabook Roman; font-size:18px;}
     height: auto;
     margin-top:10px; 
     width:100%;
-    background-image:url(../images/firefoxos.jpg);
+    //Commented-background-image:url(../images/firefoxos.jpg);
     background-size: cover;
     padding: 0px;
     overflow-y:visible;
