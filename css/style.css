@@ -75,6 +75,38 @@ p{font-family:Metabook Roman; font-size:18px;}
     display: inline;
     font-size:60px;
 }
+#box-contacts{
+    position: absolute;
+    top:50px;
+    right:30px;
+}
+#box-contacts img{
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+}
+#box-contacts a{
+    position: relative;
+}
+#box-contacts a span{
+    position: absolute;
+    text-align: center;
+    top:0px;
+    width: 100px;
+    left: -25px;
+    padding: 3px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 3px;
+    opacity: 0;
+    transition:.2s;
+}
+#box-contacts a:hover span{
+    display: block;
+    opacity: 0.9;
+    top:10px;
+    text-decoration: none;
+}
 #main-content{
     position:relative;
     min-height: 750px;
