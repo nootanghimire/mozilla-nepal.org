@@ -1,0 +1,176 @@
+/* Fonts */
+@font-face{
+	font-family:MetaBold Roman;
+	src:url('fonts/MetaBold-Roman.ttf')
+	,url('fonts/MetaBold-Roman.eot');/* IE9+ */
+	font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+	font-family: 'MetaBook Roman';
+	src:url('fonts/MetaBook-Roman.ttf')
+	,url('fonts/MetaBook-Roman.eot');/* IE9+ */
+	font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans-Regular-webfont.eot');
+    src: url('fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/OpenSans-Regular-webfont.woff') format('woff'),
+    url('fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+    url('fonts/OpenSans-Regular-webfont.svg#OpenSansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans-Semibold-webfont.eot');
+    src: url('fonts/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/OpenSans-Semibold-webfont.woff') format('woff'),
+    url('fonts/OpenSans-Semibold-webfont.ttf') format('truetype'),
+    url('fonts/OpenSans-Semibold-webfont.svg#OpenSansSemibold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans Light';
+    src: url('fonts/OpenSans-Light-webfont.eot');
+    src: url('fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/OpenSans-Light-webfont.woff') format('woff'),
+    url('fonts/OpenSans-Light-webfont.ttf') format('truetype'),
+    url('fonts/OpenSans-Light-webfont.svg#OpenSansLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+p{font-family:Metabook Roman; font-size:18px;}
+/*Stylesheet for index.html*/
+*{margin:0px; padding:0px;}
+.clear{clear:both}	
+#main-div{
+    overflow: hidden;
+    /*background:url(../images/sandstone/bg-gradient-sand.png) repeat-x 0 0,
+    url(../images/sandstone/bg-sand.png) repeat 0 0,#f5f1e8; 
+    */
+    background: url(../images/sky/bg-sky.png) repeat-x; background-color:rgb(238,238,238); margin:1px auto;}
+}	
+
+#logo{height:240px; margin:10px auto; display:block;}
+#logo-small{
+    position:relative;
+    width:100%;
+    text-align: center;
+    display:block;
+    transition: all .2s;
+    cursor: default;
+}
+#logo-small img{
+    display: inline;
+}
+#logo-small h1{
+    position: relative;
+    top:-60px;
+    display: inline;
+    font-size:60px;
+}
+#main-content{
+    position:relative;
+    min-height: 750px;
+    height: auto;
+    margin-top:10px; 
+    width:100%;
+    background-image:url(../images/firefoxos.jpg);
+    background-size: cover;
+    padding: 0px;
+    overflow-y:visible;
+}
+#top-content{
+    position: relative;
+    width: 80%;
+    left:10%;
+    top:20px;
+    min-height: 400px;
+    border-radius: 3px;
+    background: rgba(255,255,255,0.9);
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+}
+#content-main{
+    padding: 2%;
+}
+#bottom-content{
+    position: relative;
+    width: 80%;
+    left:10%;
+    top:40px;
+}
+#content-left,#content-right{
+    width: 44%;
+    position: absolute;
+    padding: 2%;
+    height: 140px;
+    border-radius: 3px;
+    background: rgba(255,255,255,0.9);
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+}
+#content-left{
+    left: 0%;
+}
+#content-right{
+    right: 0%;
+}
+#colophon{
+    margin-top: 0px;
+    height: 150px;
+}
+
+.user-select-none{
+    user-select:none;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+}
+
+@media (max-width: 1024px) {
+    #main-content{
+        min-height: 850px;
+        height: auto;
+
+    }
+    #content-left{
+        position: relative;
+        width:96%;
+    }
+    #content-right{
+        position: relative;
+        width: 96%;
+        left: 0%;
+        top:20px;
+    }
+}
+@media (max-width: 560px) {
+    #logo-small img{
+        height:60px;
+    }
+    #logo-small h1{
+        font-size: 30px;
+        top:-30px;
+    }
+}
+@media (max-width: 280px) {
+    #logo-small img{
+        height:50px;
+    }
+    #logo-small h1{
+        font-size: 25px;
+        top:-25px;
+    }
+}
+/*Stylesheet for intro.html*/
+ul.advantage li{font-family:Metabook Roman; font-size:18px;}
+.p1{display:inline; font-size:24px;}
+.p2{font-weight:bold; font-size:36px; color:#BF3A2E; display:inline;}
+.p3{font-weight:bold; font-size:36px; color:#2680C2; display:inline;}
+
+
+/*Stylesheet for involve.html*/
