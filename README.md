@@ -1,4 +1,6 @@
 mozilla-nepal-website
 =====================
 
-This will be mozilla nepal website. Backend: PHP/MySQL/Apache. Frontend: Open Web Standards ;)
+This will be mozilla nepal website. To be built using open web :)
+
+
