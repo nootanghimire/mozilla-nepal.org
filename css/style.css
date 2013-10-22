@@ -114,7 +114,8 @@ p{font-family:Metabook Roman; font-size:18px;}
     height: auto;
     margin-top:10px; 
     width:100%;
-    background-image:url(../images/firefoxos.jpg);
+    /* background-image:url(../images/firefoxos.jpg); */
+    /* It looks good w/o the background? */
     background-size: cover;
     padding: 0px;
     overflow-y:visible;
