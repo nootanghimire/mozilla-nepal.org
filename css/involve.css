@@ -31,6 +31,16 @@
       background-color: #fafafa;
       border:1px solid #999;
 }
+#topic ul li img{
+      position: absolute;
+      top:45px;
+      left: 85px;
+      opacity: 0.6;
+      transition:.2s;
+}
+#topic ul li:hover img{
+      opacity: 0.8;
+}
 .not-highlighted{
       position: absolute;
       top:-1px;
@@ -84,5 +94,11 @@
       }
       #topic ul li.lastlist:hover span{
             top:0px;
+      }
+      #topic ul li img{
+            top:2px;
+            left:12px;
+            width: 45px;
+            height: 45px;
       }
 }
