@@ -71,6 +71,28 @@
 #topic ul li.lastlist span{
       top:-36px;
 }
+@media (max-width: 1280px){
+      #topic ul li{
+            width:200px;
+      }
+      .not-highlighted{
+            width: 200px;
+      }
+      #topic ul li img{
+            left: 75px;
+      }
+}
+@media (max-width: 1230px){
+      #topic ul li{
+            width:180px;
+      }
+      .not-highlighted{
+            width: 180px;
+      }
+      #topic ul li img{
+            left: 70px;
+      }
+}
 @media (max-width: 1100px){
       #topic ul li{
             display: block;
