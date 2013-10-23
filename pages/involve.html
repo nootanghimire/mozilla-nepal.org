@@ -20,61 +20,67 @@
                         </div>
                   </em>
                   <div id="topic">
+
                         <ul>
                               <li>Helping Users
-                                    <span>Interested in helping others get the most out of using Firefox and other Mozilla projects? Our support process relies on enthusiastic contributors like you. Find out more about supporting Firefox and Thunderbird users. You can also join our Army of Awesome by helping users on Twitter.";
+                                    <span class="not-highlighted">Interested in helping others get the most out of using Firefox and other Mozilla projects? Our support process relies on enthusiastic contributors like you. Find out more about supporting Firefox and Thunderbird users. You can also join our Army of Awesome by helping users on Twitter.";
                                     </span>
                               </li>
                               <li>Testing and Quality Assurance
-                                    <span>QA is one of the easiest ways to get started with Mozilla and is a great way to get familiar with our code and tools. Help us hunt down bugs in Firefox, test Mozilla web sites or learn more about other testing opportunities.";
+                                    <span class="not-highlighted">QA is one of the easiest ways to get started with Mozilla and is a great way to get familiar with our code and tools. Help us hunt down bugs in Firefox, test Mozilla web sites or learn more about other testing opportunities.";
                                     </span>
                               </li>
                               <li >Coding
-                                    <span>Developers can help Mozilla by adding new features, making our technology smaller and faster and making development easier for others. You can find many developers on IRC so stop by and ask questions to learn more. Our web sites are open for web ninjas to hack on too.";
+                                    <span class="not-highlighted">Developers can help Mozilla by adding new features, making our technology smaller and faster and making development easier for others. You can find many developers on IRC so stop by and ask questions to learn more. Our web sites are open for web ninjas to hack on too.";
                                     </span>
                               </li>            
                               <li >Marketing and Evangelism
-                                    <span>Help us spread the word about how Firefox and other Mozilla projects are building a better Internet. Share Firefox with the world by becoming an Affiliate and then check out our Marketing Guide for more ways to get involved.";
+                                    <span class="not-highlighted">Help us spread the word about how Firefox and other Mozilla projects are building a better Internet. Share Firefox with the world by becoming an Affiliate and then check out our Marketing Guide for more ways to get involved.";
                                     </span>
                               </li>       
                         </ul><br>
                         <ul>
                               <li>Localization
-                                    <span>Get involved with Mozilla by making Firefox, Thunderbird and other projects available in your language. Also help us tell the world about how Mozilla is building a better Internet by translating content on our web sites.";
+                                    <span class="not-highlighted">Get involved with Mozilla by making Firefox, Thunderbird and other projects available in your language. Also help us tell the world about how Mozilla is building a better Internet by translating content on our web sites.";
                                     </span>
-                              </li>            
-                              <li>Add-ons
-                                    <span>Firefox and other Mozilla-based applications have a powerful extension system that allow you to make small tweaks or make major additions to your programs. If you're new to this technology, learn how to build an add-on. For experienced developers, find out how to become an AMO editor.";
+                              </li>                 
+                              <li>User Research
+                                    <span class="not-highlighted">Be part of the research team—whether you want to be a participant in an upcoming study, conduct usability tests on your own or analyze Test Pilot data—we'd love to have you join us!";
                                     </span>
-                              </li>           
+                              </li>          
                               <li >Visual Design
-                                    <span>We believe in the power of well-made and widely distributed art, and want to make it possible for artists to cover the web and people with designs inspired by Mozilla. Take part in a Creative Collective challenge or add a t-shirt design to our Community Store.";
+                                    <span class="not-highlighted">We believe in the power of well-made and widely distributed art, and want to make it possible for artists to cover the web and people with designs inspired by Mozilla. Take part in a Creative Collective challenge or add a t-shirt design to our Community Store.";
                                     </span>
                               </li>            
                               <li >Developer Documentation
-                                    <span>The Mozilla Developer Network is the hub for information about Mozilla technologies. Help make our involveation better by writing new content, correcting existing material or translating content into new languages.";
+                                    <span class="not-highlighted">The Mozilla Developer Network is the hub for information about Mozilla technologies. Help make our involveation better by writing new content, correcting existing material or translating content into new languages.";
                                     </span>
                               </li>          
                         </ul><br>
                         <ul>
-                              <li class="last">Accessibility
-                                    <span>Accessibility is about making things work for everyone. Help create tools and resources for Firefox end users with disabilities and help make web content available to non visual agents such as screen readers.";
+                              <li>Accessibility
+                                    <span class="not-highlighted">Accessibility is about making things work for everyone. Help create tools and resources for Firefox end users with disabilities and help make web content available to non visual agents such as screen readers.";
                                     </span>
                               </li>            
-                              <li class="last">Systems Administration
-                                    <span>Do you see yourself as someone who looks at the world a little different? Are ones and zeros constantly flying through your head? What we do as systems admins is we get to sit behind the scenes of the biggest entity in the world and keep the lights on. Join our mirror network or find out other ways to get involved.";
+                              <li>Systems Administration
+                                    <span class="not-highlighted">Do you see yourself as someone who looks at the world a little different? Are ones and zeros constantly flying through your head? What we do as systems admins is we get to sit behind the scenes of the biggest entity in the world and keep the lights on. Join our mirror network or find out other ways to get involved.";
                                     </span>
-                              </li>            
-                              <li class="last">User Research
-                                    <span>Be part of the research team—whether you want to be a participant in an upcoming study, conduct usability tests on your own or analyze Test Pilot data—we'd love to have you join us!";
+                              </li>
+                              <li>Add-ons
+                                    <span class="not-highlighted">Firefox and other Mozilla-based applications have a powerful extension system that allow you to make small tweaks or make major additions to your programs. If you're new to this technology, learn how to build an add-on. For experienced developers, find out how to become an AMO editor.";
                                     </span>
-                              </li>            
-                              <li class="last">Education
-                                    <span>Help build a generation of webmakers—moving people from using the web making the web—by teaching others how to code and how the web works. Explore what the Mozilla Webmaker project is all about or get started teaching others by setting up an event in your community today.";
+                              </li>         
+                              <li>Education
+                                    <span class="not-highlighted">Help build a generation of webmakers—moving people from using the web making the web—by teaching others how to code and how the web works. Explore what the Mozilla Webmaker project is all about or get started teaching others by setting up an event in your community today.";
                                     </span>
                               </li>
                         </ul><br>
                   </div>
+                  <script type="text/javascript">
+                  $( "#topic ul li span" ).click(function() {
+                        $(this).toggleClass( "highlighted" );
+                  });
+                  </script>
             </div>
       </div>
 </body>
