@@ -89,8 +89,17 @@
                         </ul><br>
                   </div>
                   <script type="text/javascript">
-                  $( "#topic ul li span" ).click(function() {
-                        $(this).toggleClass( "highlighted" );
+                  $('html').click(function(e){
+                        //alert(e.target.nodeName);
+                        if(e.target.nodeName == 'SPAN') {
+                              //alert(e.target.nodeName);
+                              $("#topic ul li span").addClass( "not-highlighted" );
+                              $("#topic ul li span").removeClass( "highlighted" );
+                              $(e.target).addClass( "highlighted" );
+
+                        } else {
+                              $("#topic ul li span").removeClass( "highlighted" );
+                        }
                   });
                   </script>
             </div>
