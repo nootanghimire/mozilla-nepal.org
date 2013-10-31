@@ -19,6 +19,7 @@
 	top:0px;
 	left:0px;
 	max-width: none;
+	max-height:200px !important;
 }
 .nivo-main-image {
 	display: block !important;
