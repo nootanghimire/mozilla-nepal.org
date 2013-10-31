@@ -71,7 +71,7 @@
 #topic ul li.lastlist span{
       top:-36px;
 }
-@media (max-width: 1280px){
+@media (max-width: 1300px){
       #topic ul li{
             width:200px;
       }
