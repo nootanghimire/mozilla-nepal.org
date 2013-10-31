@@ -50,7 +50,6 @@ p{font-family:Metabook Roman; font-size:18px;}
 *{margin:0px; padding:0px;}
 .clear{clear:both}	
 #main-div{
-    overflow: hidden;
     /*background:url(../images/sandstone/bg-gradient-sand.png) repeat-x 0 0,
     url(../images/sandstone/bg-sand.png) repeat 0 0,#f5f1e8; 
     */
@@ -108,17 +107,18 @@ p{font-family:Metabook Roman; font-size:18px;}
     top:10px;
     text-decoration: none;
 }
+#wrapper{
+    height: auto;
+}
 #main-content{
     position:relative;
-    min-height: 750px;
-    height: auto;
     margin-top:10px; 
     width:100%;
+    height:auto;
     /* background-image:url(../images/firefoxos.jpg); */
     /* It looks good w/o the background? */
-    background-size: cover;
+    /* background-size: cover; */
     padding: 0px;
-    overflow-y:visible;
 }
 #top-content{
     position: relative;
@@ -138,6 +138,8 @@ p{font-family:Metabook Roman; font-size:18px;}
     width: 80%;
     left:10%;
     top:40px;
+    height: auto;
+    min-height: 200px;
 }
 #content-left,#content-right{
     width: 45%;
@@ -155,7 +157,7 @@ p{font-family:Metabook Roman; font-size:18px;}
     right: 0%;
 }
 #colophon{
-    margin-top: 0px;
+    margin-top: 50px;
     height: 150px;
 }
 
@@ -200,6 +202,7 @@ p{font-family:Metabook Roman; font-size:18px;}
         top:-25px;
     }
 }
+
 /*Stylesheet for intro.html*/
 ul.advantage li{font-family:Metabook Roman; font-size:18px;}
 .p1{display:inline; font-size:24px;}
