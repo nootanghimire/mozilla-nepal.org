@@ -60,13 +60,15 @@ p{font-family:Metabook Roman; font-size:18px;}
 #logo-small{
     position:relative;
     width:100%;
-    text-align: center;
+    text-align: left;
+    padding-left:10%;
     display:block;
     transition: all .2s;
     cursor: default;
 }
 #logo-small img{
     display: inline;
+    !comment-padding-left:10%;
 }
 #logo-small h1{
     position: relative;
