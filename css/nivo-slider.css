@@ -18,7 +18,7 @@
 	position:absolute;
 	top:0px;
 	left:0px;
-	max-width: none;
+	max-width: 80% !important;
 	max-height:200px !important;
 }
 .nivo-main-image {
