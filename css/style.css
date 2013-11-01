@@ -68,7 +68,7 @@ p{font-family:Metabook Roman; font-size:18px;}
 }
 #logo-small img{
     display: inline;
-    padding-left:10%;
+    !comment-padding-left:10%;
 }
 #logo-small h1{
     position: relative;
