@@ -61,14 +61,14 @@ p{font-family:Metabook Roman; font-size:18px;}
     position:relative;
     width:100%;
     text-align: left;
-    padding:10%;
+    padding-left:10%;
     display:block;
     transition: all .2s;
     cursor: default;
 }
 #logo-small img{
     display: inline;
-    padding:10%;
+    padding-left:10%;
 }
 #logo-small h1{
     position: relative;
