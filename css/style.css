@@ -61,6 +61,7 @@ p{font-family:Metabook Roman; font-size:18px;}
     position:relative;
     width:100%;
     text-align: left;
+    padding:20%;
     display:block;
     transition: all .2s;
     cursor: default;
