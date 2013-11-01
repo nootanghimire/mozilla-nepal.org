@@ -60,7 +60,7 @@ p{font-family:Metabook Roman; font-size:18px;}
 #logo-small{
     position:relative;
     width:100%;
-    text-align: center;
+    text-align: left;
     display:block;
     transition: all .2s;
     cursor: default;
