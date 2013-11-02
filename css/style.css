@@ -62,16 +62,18 @@ p{font-family:Metabook Roman; font-size:18px;}
 #logo{height:240px; margin:10px auto; display:block;}
 #logo-small{
     position:relative;
-    width:100%;
+    top:-35px;
+    left: 25px;
     text-align: left;
-    padding-left:10%;
     display:block;
     transition: all .2s;
     cursor: default;
+    padding-left: 8%;
 }
 #logo-small img{
     display: inline;
-    !comment-padding-left:10%;
+    width: 165px;
+    height: 60px;
 }
 #logo-small h1{
     position: relative;
