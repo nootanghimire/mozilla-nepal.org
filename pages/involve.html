@@ -4,6 +4,17 @@
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
       <title>Get Involved</title>
       <link rel="stylesheet" href="css/involve.css"/>
+      <style>
+      #centered-popup-box{
+            position: absolute;
+            left: 20%;
+            right: 20%;
+            width:60%;
+            top:30%;
+            height: 50%;
+            background-color: blue;
+      }
+      </style>
 </head>
 <body>
       <div id="top-content">
@@ -88,19 +99,41 @@
                               </li>
                         </ul><br>
                   </div>
-                  <script type="text/javascript">
-                  $('html').click(function(e){
-                        //alert(e.target.nodeName);
-                        if(e.target.nodeName == 'SPAN') {
-                              //alert(e.target.nodeName);
-                              $("#topic ul li span").addClass( "not-highlighted" );
-                              $("#topic ul li span").removeClass( "highlighted" );
-                              $(e.target).addClass( "highlighted" );
+                  <div id="centered-popup-box">
+                        a
+                        <br>
+                        <br>
 
-                        } else {
-                              $("#topic ul li span").removeClass( "highlighted" );
-                        }
-                  });
+                        aaaaaaaaaaaa
+                        a
+                        a
+                        a
+                        a
+                        a
+                  </div>
+                  <script type="text/javascript">
+                   $('#topic ul li').click(function(e){
+                        //alert(e.target.nodeName);
+                        //if(e.target.nodeName == 'SPAN') {
+                              //$("#topic ul li span").addClass( "not-highlighted" );
+                              $("#topic ul li span").removeClass( "not-highlighted" );
+                              //$(e.target).addClass( "highlighted" );
+                              var a = $(this).html();
+                              //alert(a);
+                              document.querySelector('#centered-popup-box').innerHTML = a;
+
+
+                        //} else {
+                          //    $("#topic ul li span").removeClass( "highlighted" );
+                        //}
+                  }); 
+                  /*var objects = document.querySelector('html');
+                  objects.onclck = function(){
+                        var obj = document.getElementById('centered-popup-box');
+                        obj.innerHTML = this.innerHTML;
+                        obj.style = "display:block;";
+
+                  }*/
                   </script>
             </div>
       </div>
