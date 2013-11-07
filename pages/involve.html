@@ -4,6 +4,23 @@
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
       <title>Get Involved</title>
       <link rel="stylesheet" href="css/involve.css"/>
+      <style>
+      #centered-popup-box{
+            position: absolute;
+            left: 10%;
+            right: 10%;
+            width:70%;
+            top:20%;
+            height: auto;
+            background-color: #eee;
+            font-family: "Open Sans", sans-serif;
+            padding: 5%;
+            display: none;
+      }
+      #topic ul li span{
+            display: none !important; 
+      }
+      </style>
 </head>
 <body>
       <div id="top-content">
@@ -88,19 +105,69 @@
                               </li>
                         </ul><br>
                   </div>
-                  <script type="text/javascript">
-                  $('html').click(function(e){
-                        //alert(e.target.nodeName);
-                        if(e.target.nodeName == 'SPAN') {
-                              //alert(e.target.nodeName);
-                              $("#topic ul li span").addClass( "not-highlighted" );
-                              $("#topic ul li span").removeClass( "highlighted" );
-                              $(e.target).addClass( "highlighted" );
+                  <div id="centered-popup-box">
+                        a
+                        <br>
+                        <br>
 
-                        } else {
-                              $("#topic ul li span").removeClass( "highlighted" );
+                        aaaaaaaaaaaa
+                        a
+                        a
+                        a
+                        a
+                        a
+                  </div>
+                  <script type="text/javascript">
+
+                  // $('html').click(function(e){
+                  //       if(!$('#centered-popup-box').is(':visible')) {  
+                  //             //alert('car 2 is hidden');       
+                  //       } else {
+                  //             $('#centered-popup-box').hide(400, function(){
+                  //                   $('html').fadeTo(200,1);
+                  //             })
+                  //       }     
+                              
+
+                  // });
+ 
+
+                   $('#topic ul li').click(function(e){
+                        //alert(e.target.nodeName);
+                        //if(e.target.nodeName == 'SPAN') {
+                              //$("#topic ul li span").addClass( "not-highlighted" );
+                              //$("#topic ul li span").removeClass( "not-highlighted" );
+                              //$(e.target).addClass( "highlighted" );
+                              var a = $(this);
+                              var span = a.find('span');
+                              //alert(a);
+                              var elem = document.querySelector('#centered-popup-box')
+                              elem.innerHTML = span.html();
+                              $('#topic').fadeTo(200, 0.3);
+                              $('#centered-popup-box').show(400, function(){
+                                    $('#centered-popup-box').fadeTo(10,1);
+                              });
+
+                  $('html').keyup(function(e){
+                        //alert('Pressed: '+e.keyCode);
+                        if(e.keyCode == 27){
+                              //alert('Pressed');
+                               $('#centered-popup-box').hide(400, function(){
+                                     $('#topic').fadeTo(200,1);
+                               });
                         }
                   });
+                        //} else {
+                          //    $("#topic ul li span").removeClass( "highlighted" );
+                        //}
+                  }); 
+                  /*var objects = document.querySelector('html');
+                  objects.onclck = function(){
+                        var obj = document.getElementById('centered-popup-box');
+                        obj.innerHTML = this.innerHTML;
+                        obj.style = "display:block;";
+
+                  }*/
                   </script>
             </div>
       </div>
