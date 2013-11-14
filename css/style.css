@@ -56,7 +56,7 @@ p{font-family:Metabook Roman; font-size:18px;}
     background: url(../images/sky/bg-sky.png) repeat-x;
     background-color:rgb(238,238,238);
     margin:1px auto;
-    overflow-x:hidden;
+    overflow:hidden;
 }	
 
 #logo{height:240px; margin:10px auto; display:block;}
