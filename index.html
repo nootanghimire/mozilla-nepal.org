@@ -24,6 +24,7 @@
    $("a.ajax").click(function(e){
     e.preventDefault();
     $( "#main-content" ).load($(this).attr("href"));
+    $("html, body").animate({ scrollTop: $('#main-content').offset().top }, 1000);
   }); 
 
  });
