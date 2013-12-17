@@ -53,20 +53,27 @@ p{font-family:Metabook Roman; font-size:18px;}
     /*background:url(../images/sandstone/bg-gradient-sand.png) repeat-x 0 0,
     url(../images/sandstone/bg-sand.png) repeat 0 0,#f5f1e8; 
     */
-    background: url(../images/sky/bg-sky.png) repeat-x; background-color:rgb(238,238,238); margin:1px auto;}
+    background: url(../images/sky/bg-sky.png) repeat-x;
+    background-color:rgb(238,238,238);
+    margin:1px auto;
+    overflow:hidden;
 }	
 
 #logo{height:240px; margin:10px auto; display:block;}
 #logo-small{
     position:relative;
-    width:100%;
-    text-align: center;
+    top:-35px;
+    left: 25px;
+    text-align: left;
     display:block;
     transition: all .2s;
     cursor: default;
+    padding-left: 8%;
 }
 #logo-small img{
     display: inline;
+    width: 165px;
+    height: 60px;
 }
 #logo-small h1{
     position: relative;
@@ -202,7 +209,12 @@ p{font-family:Metabook Roman; font-size:18px;}
         top:-25px;
     }
 }
-
+.scrollback-stream{
+    position: fixed;
+    bottom:0px;
+    right:50px!important;
+    z-index: 2000!important;
+}
 /*Stylesheet for intro.html*/
 ul.advantage li{font-family:Metabook Roman; font-size:18px;}
 .p1{display:inline; font-size:24px;}

@@ -10,7 +10,7 @@
 /* The Nivo Slider styles */
 .nivoSlider {	
 	position:relative;
-	width:100%;
+	width:80%;
 	height:auto;
 	overflow: hidden;
 }
@@ -19,6 +19,7 @@
 	top:0px;
 	left:0px;
 	max-width: none;
+	max-height:400px !important;
 }
 .nivo-main-image {
 	display: block !important;
