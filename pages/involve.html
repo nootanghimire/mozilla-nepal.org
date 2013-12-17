@@ -5,19 +5,29 @@
       <title>Get Involved</title>
       <link rel="stylesheet" href="css/involve.css"/>
       <style>
+      #centralization{
+            position: fixed;
+            top:0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.6);
+            z-index: 999999;
+            display: none;
+      }
       #centered-popup-box{
             position: absolute;
-            top: 75px;
-            width: 250px;
+            top: 39%;
+            left: 30%;
+            width: 40%;
+            font-size: 17px;
             background-color: #eee;
             font-family: "Open Sans", sans-serif;
             padding: 10px;
-            display: none;
-            box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+            box-shadow: 0px 0px 25px rgba(0,0,0,0.4);
             border:1px solid #aaa;
             border-radius: 3px;
             text-align: justify;
-            z-index: 999999;
             cursor: default;
       }
       #topic ul li span{
@@ -129,20 +139,21 @@
                               </li>
                         </ul><br>
                   </div>
+                  <div id="centralization">
                   <div id="centered-popup-box">
                         Information here will be replaced by magic!
                   </div>
+                  </div>
                   <script type="text/javascript">
                   $('#topic ul li').click(function(e){
-                        $('#centered-popup-box').fadeIn(200);
-                        $('#centered-popup-box').offset({left:e.pageX,top:e.pageY});
+                        $('#centralization').fadeIn(200);
                         var a = $(this);
                         var span = a.find('span');
                         var elem = document.querySelector('#centered-popup-box')
                         elem.innerHTML = span.html();
                         $('html').keyup(function(e){
                               if(e.keyCode == 27){
-                                    $('#centered-popup-box').fadeOut(200);
+                                    $('#centralization').fadeOut(200);
                               }
                         });
                   }); 
@@ -151,7 +162,7 @@
                         var container2 = $("#topic ul li");
                         if (!container.is(e.target) && container.has(e.target).length === 0){
                               if (!container2.is(e.target) && container2.has(e.target).length === 0){
-                              $('#centered-popup-box').fadeOut(200);
+                              $('#centralization').fadeOut(200);
                               }
                         }
                   });
