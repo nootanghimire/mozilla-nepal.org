@@ -33,6 +33,14 @@
       #topic ul li span{
             display: none !important; 
       }
+      @media(max-width:1024px){
+            #centered-popup-box{
+                  position: absolute;
+                  top: 25%;
+                  left: 10%;
+                  width: 80%;
+            }
+      }
       </style>
 </head>
 <body>
@@ -140,9 +148,9 @@
                         </ul><br>
                   </div>
                   <div id="centralization">
-                  <div id="centered-popup-box">
-                        Information here will be replaced by magic!
-                  </div>
+                        <div id="centered-popup-box">
+                              Information here will be replaced by magic!
+                        </div>
                   </div>
                   <script type="text/javascript">
                   $('#topic ul li').click(function(e){
@@ -162,7 +170,7 @@
                         var container2 = $("#topic ul li");
                         if (!container.is(e.target) && container.has(e.target).length === 0){
                               if (!container2.is(e.target) && container2.has(e.target).length === 0){
-                              $('#centralization').fadeOut(200);
+                                    $('#centralization').fadeOut(200);
                               }
                         }
                   });
